@@ -29,7 +29,7 @@
     
     // Resize
     CGColorSpaceRef colorspace = CGImageGetColorSpace(cgimg);
-    CGContextRef contextNew = CGBitmapContextCreate(NULL, self.bounds.size.width, self.bounds.size.height,
+    CGContextRef contextNew = CGBitmapContextCreate(NULL, self.bounds.size.width*2, self.bounds.size.height*2,
                                                  CGImageGetBitsPerComponent(cgimg),
                                                  CGImageGetBytesPerRow(cgimg),
                                                  colorspace,
@@ -40,7 +40,7 @@
         [self.layer setContents:(__bridge id)cgimg];
         CGImageRelease(cgimg);
     } else {
-        CGContextDrawImage(contextNew, CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height), cgimg);
+        CGContextDrawImage(contextNew, CGRectMake(0, 0, self.bounds.size.width*2, self.bounds.size.height*2), cgimg);
         CGImageRef imgRef = CGBitmapContextCreateImage(contextNew);
         CGContextRelease(contextNew);
         [self.layer setContents:(__bridge id)imgRef];
