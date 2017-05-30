@@ -29,7 +29,13 @@ label = [[ZzeBlurredLabel alloc] initWithFrame:CGRectMake(0, 64, 100, 100)];
 label.text = @"Your Text"
 ```
 
-#### 2. Call getBlurryImageText
+#### 2. Set blurRadius
+##### ・Set value on blurRadius
+```objective-c
+label.blurRadius = 7.0f;
+```
+
+#### 3. Call getBlurryImageText
 ##### ・Method return image blurry
 ```objective-c
 UIImage * convertedImage = [label getBlurryImageText];
