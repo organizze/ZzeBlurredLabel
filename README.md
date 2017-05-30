@@ -3,6 +3,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/ZzeBlurredLabel.svg?style=flat)](http://cocoapods.org/pods/ZzeBlurredLabel)
 [![License](https://img.shields.io/cocoapods/l/ZzeBlurredLabel.svg?style=flat)](https://github.com/organizze/ZzeBlurredLabel/blob/master/LICENSE)
 
+#### Without filter
+![Without Filter](https://github.com/organizze/ZzeBlurredLabel/tree/master/ZzeBlurredLabel/images/without-filter.png)
+
+#### Filtered
+![With Filter](https://github.com/organizze/ZzeBlurredLabel/tree/master/ZzeBlurredLabel/images/with-filter.png)
+
 ## Requirements
 * iOS 8.0+
 
