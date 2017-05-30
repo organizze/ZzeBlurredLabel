@@ -7,6 +7,7 @@
 //
 
 #import "ZzeBlurredLabel.h"
+#import <Accelerate/Accelerate.h>
 
 @implementation ZzeBlurredLabel
 
@@ -46,6 +47,81 @@
         [self.layer setContents:(__bridge id)imgRef];
         CGImageRelease(imgRef);
     }
+    
+}
+
+- (void)newBlurryText {
+    
+    int boxSize = (int)(self.blurRadius * 100);
+    boxSize = boxSize - (boxSize % 2) + 1;
+    
+    UIGraphicsBeginImageContext(self.bounds.size);
+    [self.layer renderInContext: UIGraphicsGetCurrentContext()];
+    UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    CGImageRef img = image.CGImage;
+    
+    vImage_Buffer inBuffer, outBuffer;
+    vImage_Error error;
+    
+    void *pixelBuffer;
+    
+    CGDataProviderRef inProvider = CGImageGetDataProvider(img);
+    CFDataRef inBitmapData = CGDataProviderCopyData(inProvider);
+    
+    inBuffer.width = CGImageGetWidth(img);
+    inBuffer.height = CGImageGetHeight(img);
+    inBuffer.rowBytes = CGImageGetBytesPerRow(img);
+    
+    inBuffer.data = (void*)CFDataGetBytePtr(inBitmapData);
+    
+    pixelBuffer = malloc(CGImageGetBytesPerRow(img) *
+                         CGImageGetHeight(img));
+    
+    if(pixelBuffer == NULL) {
+        NSLog(@"No pixelbuffer");
+    }
+    
+    outBuffer.data = pixelBuffer;
+    outBuffer.width = CGImageGetWidth(img);
+    outBuffer.height = CGImageGetHeight(img);
+    outBuffer.rowBytes = CGImageGetBytesPerRow(img);
+    
+    error = vImageBoxConvolve_ARGB8888(&inBuffer,
+                                       &outBuffer,
+                                       NULL,
+                                       0,
+                                       0,
+                                       boxSize,
+                                       boxSize,
+                                       NULL,
+                                       kvImageEdgeExtend);
+    
+    
+    if (error) {
+        NSLog(@"error from convolution %ld", error);
+    }
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef ctx = CGBitmapContextCreate(
+                                             outBuffer.data,
+                                             outBuffer.width,
+                                             outBuffer.height,
+                                             8,
+                                             outBuffer.rowBytes,
+                                             colorSpace,
+                                             kCGImageAlphaNoneSkipLast);
+    CGImageRef imageRef = CGBitmapContextCreateImage (ctx);
+    
+    [self.layer setContents:(__bridge id)imageRef];
+    
+    //clean up
+    CGImageRelease(imageRef);
+    CGContextRelease(ctx);
+    CGColorSpaceRelease(colorSpace);
+    free(pixelBuffer);
+    CFRelease(inBitmapData);
     
 }
 
