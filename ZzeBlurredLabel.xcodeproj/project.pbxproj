@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E553BF851EDDDAD50093C3BA /* ZzeBlurredLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E553BF841EDDDAD50093C3BA /* ZzeBlurredLabel.m */; };
+		E553BF861EDDDAD50093C3BA /* ZzeBlurredLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E553BF831EDDDAD50093C3BA /* ZzeBlurredLabel.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E553BF7E1EDDDAD40093C3BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E553BF861EDDDAD50093C3BA /* ZzeBlurredLabel.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E553BF801EDDDAD50093C3BA /* libZzeBlurredLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZzeBlurredLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E553BF831EDDDAD50093C3BA /* ZzeBlurredLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZzeBlurredLabel.h; sourceTree = "<group>"; };
+		E553BF841EDDDAD50093C3BA /* ZzeBlurredLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZzeBlurredLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E553BF7D1EDDDAD40093C3BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E553BF771EDDDAD40093C3BA = {
+			isa = PBXGroup;
+			children = (
+				E553BF821EDDDAD50093C3BA /* ZzeBlurredLabel */,
+				E553BF811EDDDAD50093C3BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E553BF811EDDDAD50093C3BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E553BF801EDDDAD50093C3BA /* libZzeBlurredLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E553BF821EDDDAD50093C3BA /* ZzeBlurredLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E553BF831EDDDAD50093C3BA /* ZzeBlurredLabel.h */,
+				E553BF841EDDDAD50093C3BA /* ZzeBlurredLabel.m */,
+			);
+			path = ZzeBlurredLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E553BF7F1EDDDAD40093C3BA /* ZzeBlurredLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E553BF891EDDDAD50093C3BA /* Build configuration list for PBXNativeTarget "ZzeBlurredLabel" */;
+			buildPhases = (
+				E553BF7C1EDDDAD40093C3BA /* Sources */,
+				E553BF7D1EDDDAD40093C3BA /* Frameworks */,
+				E553BF7E1EDDDAD40093C3BA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZzeBlurredLabel;
+			productName = ZzeBlurredLabel;
+			productReference = E553BF801EDDDAD50093C3BA /* libZzeBlurredLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E553BF781EDDDAD40093C3BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Organizze;
+				TargetAttributes = {
+					E553BF7F1EDDDAD40093C3BA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2L6FW4ZLM8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E553BF7B1EDDDAD40093C3BA /* Build configuration list for PBXProject "ZzeBlurredLabel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E553BF771EDDDAD40093C3BA;
+			productRefGroup = E553BF811EDDDAD50093C3BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E553BF7F1EDDDAD40093C3BA /* ZzeBlurredLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E553BF7C1EDDDAD40093C3BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E553BF851EDDDAD50093C3BA /* ZzeBlurredLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E553BF871EDDDAD50093C3BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E553BF881EDDDAD50093C3BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E553BF8A1EDDDAD50093C3BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2L6FW4ZLM8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E553BF8B1EDDDAD50093C3BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2L6FW4ZLM8;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E553BF7B1EDDDAD40093C3BA /* Build configuration list for PBXProject "ZzeBlurredLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E553BF871EDDDAD50093C3BA /* Debug */,
+				E553BF881EDDDAD50093C3BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E553BF891EDDDAD50093C3BA /* Build configuration list for PBXNativeTarget "ZzeBlurredLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E553BF8A1EDDDAD50093C3BA /* Debug */,
+				E553BF8B1EDDDAD50093C3BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E553BF781EDDDAD40093C3BA /* Project object */;
+}
