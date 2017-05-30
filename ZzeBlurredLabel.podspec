@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   #                 DESC
 
   s.homepage     = "https://github.com/organizze/ZzeBlurredLabel"
-  s.screenshots  = "https://github.com/organizze/ZzeBlurredLabel/blob/master/images/without-filter.png", "https://github.com/organizze/ZzeBlurredLabel/blob/master/images/with-filter.png"
+  #s.screenshots  = ""
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
